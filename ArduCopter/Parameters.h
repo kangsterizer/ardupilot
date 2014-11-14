@@ -103,6 +103,7 @@ public:
         k_param_fs_batt_mah,
         k_param_angle_rate_max,         // remove
         k_param_rssi_range,
+        k_param_rssi_rc,
         k_param_rc_feel_rp,
         k_param_NavEKF,                 // Extended Kalman Filter Inertial Navigation Group
         k_param_mission,                // mission library
@@ -347,6 +348,7 @@ public:
 
     AP_Int8         rssi_pin;
     AP_Float        rssi_range;                 // allows to set max voltage for rssi pin such as 5.0, 3.3 etc. 
+    AP_Int8         rssi_rc;                    // allows getting RSSI from a PWM pin
     AP_Int8         wp_yaw_behavior;            // controls how the autopilot controls yaw during missions
     AP_Int8         rc_feel_rp;                 // controls vehicle response to user input with 0 being extremely soft and 100 begin extremely crisp
 
